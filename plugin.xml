@@ -35,39 +35,4 @@
         <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
 
     </platform>
-
-    <!-- ios -->
-    <platform name="ios">
-        <config-file target="config.xml" parent="/*">
-            <feature name="VideoEditor">
-                <param name="ios-package" value="VideoEditor"/>
-            </feature>
-        </config-file>
-
-        <header-file src="src/ios/VideoEditor.h" />
-        <source-file src="src/ios/VideoEditor.m" />
-
-        <header-file src="src/ios/SDAVAssetExportSession.h" />
-        <source-file src="src/ios/SDAVAssetExportSession.m" />
-
-        <framework src="AssetsLibrary.framework" />
-        <framework src="AVFoundation.framework" />
-        <framework src="MediaPlayer.framework" />
-        <framework src="CoreVideo.framework" />
-    </platform>
-
-    <!-- Windows 8 -->
-    <platform name="windows8">
-        <js-module src="src/windows8/VideoEditorProxy.js" name="VideoEditorProxy">
-            <merges target="" />
-        </js-module>
-    </platform>
-
-    <!-- Windows -->
-    <platform name="windows">
-        <js-module src="src/windows/VideoEditorProxy.js" name="VideoEditorProxy">
-            <merges target="" />
-        </js-module>
-    </platform>
-
 </plugin>
